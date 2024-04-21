@@ -32,8 +32,8 @@ function tradotto(){
     let testoU = document.getElementById("testo").value
     
     for (let i = 0; i < testoU.length; i++) {
-        if (testoU[i] === " ") {
-            testoS.push("__");
+        if (testoU[i] === "__") {
+            testoS.push(" ");
         } else {
             for (let j = 0; j < 26; j++) {
                 if (testoU[i] === alfabeto[j]) {
