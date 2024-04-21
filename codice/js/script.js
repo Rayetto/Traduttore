@@ -33,7 +33,7 @@ function tradotto(){
     
     for (let i = 0; i < testoU.length; i++) {
         if (testoU[i] === "__") {
-            testoS.push(" ");
+            testoS.push("||");
         } else {
             for (let j = 0; j < 26; j++) {
                 if (testoU[i] === alfabeto[j]) {
