@@ -35,7 +35,7 @@ textarea:hover::placeholder{
     color: #2e2e2e;
 }
 input, label, button{
-margin-right: 15px;
+margin-right: 20px;
 }
 button{
     width: auto;
@@ -49,4 +49,20 @@ button:hover{
 }
 button:active{
     background-color: #3fffff;
+}
+
+@media only screen and (max-width: 668px){
+    p{
+        margin-bottom: 5%;
+    }
+    .flex{
+        margin: 5% 0%;
+    }
+    textarea{
+        width: 75%;
+        height: 150px;
+    }
+    textarea:hover{
+        height: 250px;
+    }
 }
