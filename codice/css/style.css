@@ -2,7 +2,7 @@ body{
     background-color: #383838;
 }
 h1, p{
-    margin-left: 25%;
+    text-align: center;
     color: #cccccc;
 }
 .flex{
