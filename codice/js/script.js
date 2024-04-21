@@ -5,7 +5,7 @@ function traduci(){
                     "y", "z", "a", "b"];
     let testoS = [];
 
-    let testoU = document.getElementById("testo").value
+    let testoU = document.getElementById("testo").value.toLowerCase()
 
     for (let i = 0; i < testoU.length; i++) {
         if (testoU[i] === " ") {
@@ -29,7 +29,7 @@ function tradotto(){
                     "y", "z", "a", "b"];
     let testoS = [];
     
-    let testoU = document.getElementById("testo").value
+    let testoU = document.getElementById("testo").value.toLowerCase()
     
     for (let i = 0; i < testoU.length; i++) {
         if (testoU[i] === "_") {
