@@ -1,15 +1,38 @@
 body{
     background-color: #383838;
 }
-h2, p{
+h1, p{
+    margin-left: 25%;
     color: #cccccc;
 }
 .flex{
     margin: 2% 0%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     color: #cccccc;
+}
+textarea{
+    display: flex;
+    margin: auto;
+    padding: 0.5%;
+    width: 50%;
+    height: 70px;
+    border: outset 3px #3fffff;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px 7px #1f1f1f,
+               -10px -10px 15px -7px #a3a3a3;
+    transition: 0.7s;
+
+}
+textarea:hover{
+    height: 150px;
+    background-color: #b9b9b9;
+    transition: 0.7s;
+}
+
+textarea:hover::placeholder{
+    color: #2e2e2e;
 }
 input, label, button{
 margin-right: 15px;
