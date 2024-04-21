@@ -8,12 +8,12 @@ function traduci(){
     let testoU = document.getElementById("testo").value
 
     for (let i = 0; i < testoU.length; i++) {
-        if (testoU[i] === "__") {
-            testoS.push(" ");
+        if (testoU[i] === " ") {
+            testoS.push("_");
         } else {
             for (let j = 0; j < 26; j++) {
                 if (testoU[i] === alfabeto[j]) {
-                    testoS.push(alfabeto[j - 2]);
+                    testoS.push(alfabeto[j + 2]);
                     break;
                 }
             }
@@ -32,12 +32,12 @@ function tradotto(){
     let testoU = document.getElementById("testo").value
     
     for (let i = 0; i < testoU.length; i++) {
-        if (testoU[i] === " ") {
-            testoS.push("__");
+        if (testoU[i] === "_") {
+            testoS.push(" ");
         } else {
             for (let j = 0; j < 26; j++) {
                 if (testoU[i] === alfabeto[j]) {
-                    testoS.push(alfabeto[j + 2]);
+                    testoS.push(alfabeto[j - 2]);
                     break;
                 }
             }
@@ -50,10 +50,10 @@ function switchType(){
     let tipoTraduzione = document.querySelector('input[name="tipoTraduzione"]:checked').value;
 console.log(tipoTraduzione)
     if(tipoTraduzione == "traduci"){
-        tradotto()
+        traduci()
     }
     else if(tipoTraduzione == "tradotto"){
-        traduci()
+        tradotto()
     }
 
 }
