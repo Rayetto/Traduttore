@@ -1,0 +1,29 @@
+body{
+    background-color: #383838;
+}
+h2, p{
+    color: #cccccc;
+}
+.flex{
+    margin: 2% 0%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #cccccc;
+}
+input, label, button{
+margin-right: 15px;
+}
+button{
+    width: auto;
+    padding: 0.5% 1%;
+    background-color: #cccccc;
+    border-radius: 5px;
+    border: 0px;
+}
+button:hover{
+    background-color: #aaffff;
+}
+button:active{
+    background-color: #3fffff;
+}

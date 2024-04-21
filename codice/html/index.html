@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Traduttore definitivo</title>
+    <link rel="stylesheet" href="/codice/css/style.css">
+</head>
+<body>
+    <h2>Traduttore</h2>
+    <p>Con key = da testo normale a testo tradotto <br>
+       A-Z = da testo tradotto a testo normale</p>
+
+    <form id="codice">
+        <textarea name="text" id="testo" cols="30" rows="5" placeholder="Inserisci il codice da tradurre"></textarea>
+
+        <div class="flex">
+            <div>
+                <input type="radio" id="key" name="tipoTraduzione" value="tradotto" checked />
+                <label for="key">Con key</label>
+              </div>
+            
+              <div>
+                <input type="radio" id="a-z" name="tipoTraduzione" value="traduci" />
+                <label for="a-z">A-Z</label>
+              </div>
+
+            <button type="reset">Reset</button>
+            <button type="button" onclick="switchType()">Traduci</button>
+        </div>
+
+        <textarea name="textT" id="testoT" cols="30" rows="5" placeholder="Eccoti il testo tradotto"></textarea>
+    </form>
+
+
+    <script src="/codice/js/script.js"></script>
+</body>
+</html>
