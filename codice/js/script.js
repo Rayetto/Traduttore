@@ -13,7 +13,7 @@ function traduci(){
         } else {
             for (let j = 0; j < 26; j++) {
                 if (testoU[i] === alfabeto[j]) {
-                    testoS.push(alfabeto[j + 2]);
+                    testoS.push(alfabeto[j - 2]);
                     break;
                 }
             }
@@ -37,7 +37,7 @@ function tradotto(){
         } else {
             for (let j = 0; j < 26; j++) {
                 if (testoU[i] === alfabeto[j]) {
-                    testoS.push(alfabeto[j - 2]);
+                    testoS.push(alfabeto[j + 2]);
                     break;
                 }
             }
